@@ -1,10 +1,14 @@
 name = "v2ray-worker-rifkhan"
-main = "src/index.ts"
+main = "src/worker.ts"
 compatibility_date = "2024-01-01"
+node_compat = true
 
 kv_namespaces = [
   { binding = "settings", id = "87902992fed148e3bc6e8ab1c5f13d33" }
 ]
 
 [env.production]
-name = "v2ray-worker-rifkhan"
+name = "v2ray-worker-rifkhan-prod"
+kv_namespaces = [
+  { binding = "settings", id = "87902992fed148e3bc6e8ab1c5f13d33" }
+]
